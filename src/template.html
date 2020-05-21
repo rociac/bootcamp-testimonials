@@ -4,19 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
   <title>Frontend Mentor | Coding Bootcamp Testimonials Slider</title>
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
 </head>
 
 <body>
@@ -26,20 +14,28 @@
 
       <div class="testimonial__left">
         <img class="quotes" src="./assets/pattern-quotes.svg" alt="">
-        <div class="testimonial__text">
+        <div class="testimonial__text animated-text">
           “ I’ve been interested in coding for a while but never taken the jump, until now.
           I couldn’t recommend this course enough. I’m now in the job of my dreams and so
           excited about the future. ”
         </div>
+        <div class="testimonial__text hide">
+          “ If you want to lay the best foundation possible I’d recommend taking this course.
+          The depth the instructors go into is incredible. I now feel so confident about
+          starting up as a professional developer. ”
+        </div>
 
-        <div class="testimonial__person">
-          Tanya Sinclair
-          UX Engineer
+        <div class="testimonial__person animated-person">
+          <p class="name">Tanya Sinclair <span class="profesion">UX Engineer</span></p>
+        </div>
+        <div class="testimonial__person hide">
+          <p class="name">John Tarkpor <span class="profesion">Junior Front-end Developer</span></p>
         </div>
       </div>
 
       <div class="testimonial__right">
-        <img class="testimonial__image" src="./assets/image-tanya.jpg" alt="Tanya">
+        <img class="testimonial__image animated-image" src="./assets/image-tanya.jpg" alt="Tanya">
+        <img class="testimonial__image hide" src="./assets/image-john.jpg" alt="John">
         <img class="pattern" src="./assets/pattern-bg.svg" alt="">
         <div class="btn">
           <div class="btn-prev-container">
@@ -53,14 +49,6 @@
     </div>
     <img class="curve" src="./assets/pattern-curve.svg" alt="">
   </section>
-  <!-- <div class="">
-    “ If you want to lay the best foundation possible I’d recommend taking this course.
-    The depth the instructors go into is incredible. I now feel so confident about
-    starting up as a professional developer. ”
-
-    John Tarkpor
-    Junior Front-end Developer
-  </div> -->
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
